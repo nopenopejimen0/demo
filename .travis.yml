@@ -1,0 +1,12 @@
+language: go
+go:
+- 1.14.x
+
+env:
+  global:
+    - secure: "qJSx6deK+6jfXkyNV4/E/uwX7iyagg4GqNYmGHynQ1lSGAXrSKUAloKYqtitYGJTzyGTFwIppTmzEhTcgMvzVOz1B3EpkkH0gKyOi+8rG14o+3Jfsfn4vnGLh4pRzXLVlscv0CA5H4/EZu+gKyIw+nJgCJz6TRS3Ggrz7OxbR3q
+l4irU6UTCN/GEZmYPnsd95JI+geKQmArmlLZcwrE7mSARE9Vg5rl3/iXjfxZmBWlh7U51h05s6gTtgtRgibnN556b5rmVdDu48DUCqWZHZ0lFOmXKq/M3d5NgjgYzg/IwQBtoK+VZ83CAQrLnX7ZbOETaQF7P5+Me2QzokKP1v0bZd+wGxXdCN
+BtVhgmDDk5sNIsjYSMaFT5IrSSbyMVvqKz3i0gNaO9hGoOmk2ByYQZILMhpMubZg1VsbbbTEyn+vCpZbdcRhlkSiibfWxL7pBckyUQkskuo1t8wDx7Es3onVU73C//d73Md0mcx5eeQZfLqSPVoF7rO9vmUwoYA050b4TEH+W6sL2AbVtlIF8R
+tY0hstEEn2JIZB4h6TVNpI0nT3enIKdWVkNIOXKZL7so2R0fUCKqhPrDq5f174CKBHcSgWep3szXFBkyUHcaq4SZNW1S/XSUuBlM5tgdILKJkskk/peWV71WQUFh+t5vGCglGEiMGbeZZagyexaI="
+
+script: go run main.go
